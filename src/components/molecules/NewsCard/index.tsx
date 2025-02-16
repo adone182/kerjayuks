@@ -15,10 +15,10 @@ export const NewsCard = ({ author, date, content, avatar }: NewsCardProps) => {
       <div className="w-full flex items-center justify-between">
         <div className="flex items-center gap-2">
           <Avatar src={avatar} alt={author} className="w-8 h-8 rounded-full" />
-          <h4 className="text-red-500 text-sm font-semibold">{author}</h4>
+          <h4 className="text-red-500 text-xs font-semibold">{author}</h4>
         </div>
 
-        <div className="flex flex-col items-end text-xs text-gray-500">
+        <div className="flex flex-col items-end text-[10px] text-gray-500">
           <p>{weekday}</p>
           <p>{fullDate}</p>
         </div>
@@ -26,7 +26,7 @@ export const NewsCard = ({ author, date, content, avatar }: NewsCardProps) => {
 
       <div className="w-full">
         {content.map((text, index) => (
-          <p key={index} className="text-sm text-gray-800">
+          <p key={index} className="text-[10px] text-gray-800">
             {text}
           </p>
         ))}
