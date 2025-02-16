@@ -1,3 +1,34 @@
+@import "@fontsource/poppins";
+@import "@fontsource/inter";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.react-multi-carousel-dot-list {
+  display: flex;
+  justify-content: center;
+}
+
+.react-multi-carousel-dot button {
+  width: 8px;
+  height: 8px;
+  margin: 0 4px;
+  border-radius: 50%;
+  background-color: rgba(189, 186, 186, 0.678);
+  border: none !important;
+  transition: background-color 0.3s ease;
+}
+
+.react-multi-carousel-dot--active button {
+  border: none;
+  background-color: #ea580c !important;
+}
+
+.container {
+  @apply relative max-w-sm mx-auto bg-white border border-orange-600 rounded-md shadow-md min-h-screen;
+}

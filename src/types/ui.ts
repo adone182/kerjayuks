@@ -1,9 +1,11 @@
 export type Notification = {
   id: number;
   type: "Reimbursement" | "Sickness" | "Overtime";
-  message: string;
+  title: string;
+  description: string;
   date: string;
   status: "approved" | "rejected" | "processing";
+  isRead: boolean;
 };
 
 export type User = {
